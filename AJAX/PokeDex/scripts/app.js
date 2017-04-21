@@ -4,6 +4,7 @@ $(document).ready(function(){
 });
 
 var dex = function() {
+	$('#create-form').remove();
 	$.ajax({
 		type: "GET",
 		url: "http://52.25.225.137:8080/pokemon/data/poke?sorted=true",

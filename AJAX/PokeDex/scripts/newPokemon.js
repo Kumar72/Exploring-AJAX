@@ -1,8 +1,9 @@
 function createPokemon(){
-	console.log("INSIDE CREATE POKEMON");
+	// console.log("INSIDE CREATE POKEMON");
 	var $hr = $('<hr>');
 	var $h3 = $('<h3>');
 		$h3.text('Create Your Own Pokemon');
+
 	var $form = $('<form>');
 		$form.attr('name', 'create')
 		$form.attr('id', 'create-form');
@@ -21,7 +22,7 @@ function createPokemon(){
 	var $label1 = $('<label>');
 		$label1.text('Name: ');
 	var $input1 = $('<input>');
-		$input1.attr('name', 'pokeId');
+		$input1.attr('name', 'name');
 		$input1.attr('type', 'text');
 		$input1.attr('id', 'name');
 		$input1.addClass('form-input');
@@ -101,6 +102,7 @@ function createPokemon(){
 			}).done(function(data, status){
 				console.log("CREATE SUCCESS");
 				//refresh page
+				$('#table').remove();
 				dex();
 			}).fail(function(xhr, status, error){
 				console.log("FAIL");
