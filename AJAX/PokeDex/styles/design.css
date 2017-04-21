@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: rgb(196, 14, 14);
+	opacity: 75%
+	font: 25px "Arial Black", Arial, Sans-Serif;
+}
+
+.table-row{
+	border-color: black;
+	border-style: solid;
+	width: 176px;
+	margin: 25px auto;
+	background-color: rgb(44, 233, 211);
+}
+
+/*.num-button{
+	color: white;
+	display: run-in;
+	text-align: center;
+	font-size: 21px;
+	font-style: normal;
+	background-size: contain;
+	background-color: darkgray;
+	width: 44px;
+	height: 41px;
+	padding: 3px 0 0 0;
+	text-align: center;
+}*/
+div.container {
+	height: 21px
+	width: 90%
+	border: 1px solid gray;
+}
+
+.table {
+	font-size: 33px;
+	font: solid;
+	background-color: black;
+	opacity: 0.5;
+	color: white;
+	width: 170px;
+	height: 60px;
+	padding: 3px 0 0 0;
+	text-align: right;
+}
+.odd {
+	background-color: white;
+}
+
+.even {
+background-color: grey;
+}
